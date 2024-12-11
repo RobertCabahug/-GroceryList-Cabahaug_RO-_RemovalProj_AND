@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/img_2"
+    tools:context="User_authentication.Register">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/yellow_gold"
+        android:text="@string/reg_str"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:textSize="15sp"
+            android:hint="@string/emailStr"
+            android:textStyle="bold"
+            android:background="@drawable/box_design" />
+
+        <EditText
+            android:id="@+id/reg_username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:hint="@string/username_str"
+            android:layout_below="@+id/email"
+            android:background="@drawable/box_design" />
+        <EditText
+            android:id="@+id/reg_pass"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:hint="@string/pass_str"
+            android:layout_below="@+id/reg_username"
+            android:background="@drawable/box_design" />
+
+        <Button
+            android:id="@+id/registerBtn"
+            android:layout_height="60dp"
+            android:layout_width="110dp"
+            android:layout_below="@+id/reg_pass"
+            android:text="@string/reg_str"
+            android:layout_margin="3dp"
+            android:background="@color/yellow_gold"
+            android:layout_weight="1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="5dp"/>
+
+
+    </RelativeLayout>
+</LinearLayout>

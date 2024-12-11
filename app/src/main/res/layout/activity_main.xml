@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_2"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="50sp"
+        android:textColor="@color/yellow_gold"
+        android:gravity="center"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="300dp">
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:textSize="15sp"
+            android:hint="@string/username_str"
+            android:textStyle="bold"
+            android:background="@drawable/box_design" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_margin="15dp"
+            android:hint="@string/pass_str"
+            android:layout_below="@+id/username"
+            android:background="@drawable/box_design" />
+
+        <TextView
+            android:id="@+id/forgetPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/forgot_pass"
+            android:layout_below="@+id/password"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="15dp"
+            android:layout_marginTop="5dp" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/Signup"
+            android:layout_width="100dp"
+            android:text="Signup"
+            android:layout_weight="1"
+            android:background="@color/yellow_gold"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:id="@+id/Login"
+            android:layout_height="50dp"
+            android:layout_width="100dp"
+            android:layout_toRightOf="@+id/Signup"
+            android:text="Login"
+            android:layout_margin="5dp"
+            android:background="@color/yellow_gold"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+</LinearLayout>
