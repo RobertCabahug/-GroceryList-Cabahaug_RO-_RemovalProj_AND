@@ -1,43 +1,45 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/nav_settings"
     android:background="@drawable/img_2"
-    android:layout_height="match_parent">
+    tools:context="Navigation.Settings">
+
 
     <TextView
-
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Sample List"
-        android:textSize="15sp"/>
-
-    <TextView
-        android:id="@+id/description"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Sample List"
-        android:textSize="20sp"/>
-
+        android:text="@string/settings"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:textColor="@color/yellow_gold"
+        />
     <LinearLayout
-        android:layout_height="wrap_content"
         android:layout_width="match_parent"
-        android:orientation="horizontal"
-        android:weightSum="2">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="100dp">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="About Phone"
+            android:textSize="15sp"
+            android:clickable="true"
+            android:layout_margin="15dp"
+            android:textColor="@color/yellow_gold"
+            />
         <Button
-            android:id="@+id/edit"
-            android:layout_width="100dp"
+            android:id="@+id/Logout"
             android:layout_height="50dp"
-            android:text="@string/edit"
-            android:layout_weight="1"/>
-        <Button
-            android:id="@+id/delete"
-            android:text="@string/delete"
             android:layout_width="100dp"
-            android:layout_height="50dp"
-            android:layout_weight="1"/>
-
+            android:layout_below="@+id/description"
+            android:text="@string/logout"
+            android:layout_margin="5dp"
+            android:background="@color/yellow_gold"
+            android:layout_weight="1"
+            android:layout_alignEnd="@+id/description"/>
     </LinearLayout>
 
-</LinearLayout>
+</FrameLayout>
